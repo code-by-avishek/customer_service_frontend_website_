@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orders — NestaGo | Track Your Furniture</title>
+
+    <meta name="description"
+          content="Track your NestaGo order — from workshop drafting through finishing to delivery.">
+    <meta name="keywords" content="Furniture, Order Tracking, NestaGo Orders">
+    <meta name="author" content="NestaGo">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#1C1B17">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Orders — NestaGo">
+    <meta property="og:description" content="Track your NestaGo order.">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- ==========================================================
+        HEADER
+    =========================================================== -->
+    <header class="site-header">
+
+        <nav class="nav" aria-label="Primary Navigation">
+
+            <a href="index.html#top" class="nav-logo">
+                NestaGo
+                <span>EST. 2026</span>
+            </a>
+
+            <ul class="nav-links" id="mobile-menu">
+
+                <li><a href="index.html#collection">Collection</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#materials">Materials</a></li>
+
+                <li class="dropdown">
+                    <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+                        More
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="customize.html">Customize</a></li>
+                        <li><a href="orders.html" aria-current="page">Orders</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="index.html#visit">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-actions">
+                <a href="shop.html" class="nav-btn">Shop Now</a>
+
+                <button class="nav-toggle" type="button" aria-label="Toggle Navigation"
+                        aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main id="main-content">
+
+        <!-- ==========================================================
+            PAGE HERO
+        =========================================================== -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-inner reveal">
+                    <span class="section-tag">Order Tracking</span>
+                    <h1>
+                        From workshop
+                        <span>to your door.</span>
+                    </h1>
+                    <p>
+                        Every order is handmade after it's placed. Track its progress
+                        through drafting, joinery, finishing and delivery below.
+                    </p>
+                </div>
+                <div class="breadcrumb reveal">
+                    <a href="index.html#top">Home</a>
+                    <span>/</span>
+                    <span>Orders</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+            ORDER LOOKUP
+        =========================================================== -->
+        <section class="orders-section">
+            <div class="container">
+
+                <form class="order-lookup reveal" id="orderLookupForm">
+                    <input type="text" id="orderLookupInput" class="text-field"
+                           placeholder="Enter an order number, e.g. NG-10482">
+                    <button type="submit" class="btn btn-primary">Track Order</button>
+                </form>
+
+                <div class="orders-toolbar reveal">
+                    <div class="order-tabs" role="tablist" aria-label="Filter orders by status">
+                        <button type="button" class="order-tab is-active" data-filter="all">All</button>
+                        <button type="button" class="order-tab" data-filter="processing">Processing</button>
+                        <button type="button" class="order-tab" data-filter="production">In Production</button>
+                        <button type="button" class="order-tab" data-filter="shipped">Shipped</button>
+                        <button type="button" class="order-tab" data-filter="delivered">Delivered</button>
+                    </div>
+                </div>
+
+                <!-- ============================
+                    ORDER LIST
+                ============================= -->
+                <div class="order-list" id="orderList">
+
+                    <!-- ORDER 01 -->
+                    <article class="order-card reveal" data-status="production">
+                        <button type="button" class="order-summary" aria-expanded="false">
+                            <div class="order-summary-main">
+                                <span class="order-id">NG-10482</span>
+                                <span class="order-item">Long Table — American Oak</span>
+                            </div>
+                            <div class="order-summary-meta">
+                                <span class="order-date">Placed Jul 28, 2026</span>
+                                <span class="status-badge status-production">In Production</span>
+                                <svg class="order-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+
+                        <div class="order-detail">
+                            <ol class="order-timeline">
+                                <li class="is-done">
+                                    <span class="tl-dot"></span>
+                                    <div>
+                                        <strong>Order Confirmed</strong>
+                                        <span>Jul 28, 2026</span>
+                                    </div>
+                                </li>
+                                <li class="is-done">
+                                    <span class="tl-dot"></span>
+                                    <div>
+                                        <strong>Wood Selected &amp; Drafted</strong>
+                                        <span>Jul 31, 2026</span>
+                                    </div>
+                                </li>
+                                <li class="is-active">
+                                    <span class="tl-dot"></span>
+                                    <div>
+                                        <strong>In Production — Joinery</strong>
+                                        <span>Est. complete Aug 20, 2026</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="tl-dot"></span>
+                                    <div>
+                                        <strong>Finishing &amp; Quality Check</strong>
+                                        <span>Pending</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="tl-dot"></span>
+                                    <div>
+                                        <strong>Shipped</strong>
+                                        <span>Pending</span>
+                                    </div>
+                                </li>
+                            </ol>
+
+                            <div class="order-detail-footer">
+                                <span>Estimated delivery: Sep 5 – Sep 12, 2026</span>
+                                <button type="button" class="btn btn-outline">Contact Support</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ORDER 02 -->
+                    <article class="order-card reveal" data-status="shipped">
+                        <button type="button" class="order-summary" aria-expanded="false">
+                            <div class="order-summary-main">
+                                <span class="order-id">NG-10417</span>
+                                <span class="order-item">Reading Chair — Walnut Frame</span>
+                            </div>
+                            <div class="order-summary-meta">
+                                <span class="order-date">Placed Jul 10, 2026</span>
+                                <span class="status-badge status-shipped">Shipped</span>
+                                <svg class="order-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+
+                        <div class="order-detail">
+                            <ol class="order-timeline">
+                                <li class="is-done">
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Order Confirmed</strong><span>Jul 10, 2026</span></div>
+                                </li>
+                                <li class="is-done">
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Wood Selected &amp; Drafted</strong><span>Jul 13, 2026</span></div>
+                                </li>
+                                <li class="is-done">
+                                    <span class="tl-dot"></span>
+                                    <div><strong>In Production — Joinery</strong><span>Jul 28, 2026</span></div>
+                                </li>
+                                <li class="is-done">
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Finishing &amp; Quality Check</strong><span>Aug 4, 2026</span></div>
+                                </li>
+                                <li class="is-active">
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Shipped</strong><span>Aug 6, 2026 — Tracking #7734KLM</span></div>
+                                </li>
+                            </ol>
+
+                            <div class="order-detail-footer">
+                                <span>Estimated delivery: Aug 18 – Aug 22, 2026</span>
+                                <button type="button" class="btn btn-outline">Contact Support</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ORDER 03 -->
+                    <article class="order-card reveal" data-status="delivered">
+                        <button type="button" class="order-summary" aria-expanded="false">
+                            <div class="order-summary-main">
+                                <span class="order-id">NG-10298</span>
+                                <span class="order-item">Wooden Bench — White Oak</span>
+                            </div>
+                            <div class="order-summary-meta">
+                                <span class="order-date">Placed Jun 2, 2026</span>
+                                <span class="status-badge status-delivered">Delivered</span>
+                                <svg class="order-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+
+                        <div class="order-detail">
+                            <ol class="order-timeline">
+                                <li class="is-done">
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Order Confirmed</strong><span>Jun 2, 2026</span></div>
+                                </li>
+                                <li class="is-done">
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Wood Selected &amp; Drafted</strong><span>Jun 5, 2026</span></div>
+                                </li>
+                                <li class="is-done">
+                                    <span class="tl-dot"></span>
+                                    <div><strong>In Production — Joinery</strong><span>Jun 19, 2026</span></div>
+                                </li>
+                                <li class="is-done">
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Finishing &amp; Quality Check</strong><span>Jun 24, 2026</span></div>
+                                </li>
+                                <li class="is-done">
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Delivered</strong><span>Jul 2, 2026</span></div>
+                                </li>
+                            </ol>
+
+                            <div class="order-detail-footer">
+                                <span>Delivered Jul 2, 2026</span>
+                                <button type="button" class="btn btn-outline">Leave a Review</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ORDER 04 -->
+                    <article class="order-card reveal" data-status="processing">
+                        <button type="button" class="order-summary" aria-expanded="false">
+                            <div class="order-summary-main">
+                                <span class="order-id">NG-10511</span>
+                                <span class="order-item">Custom Chair — Walnut, Brass Hardware</span>
+                            </div>
+                            <div class="order-summary-meta">
+                                <span class="order-date">Placed Aug 12, 2026</span>
+                                <span class="status-badge status-processing">Processing</span>
+                                <svg class="order-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </button>
+
+                        <div class="order-detail">
+                            <ol class="order-timeline">
+                                <li class="is-active">
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Order Confirmed</strong><span>Aug 12, 2026</span></div>
+                                </li>
+                                <li>
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Wood Selected &amp; Drafted</strong><span>Pending</span></div>
+                                </li>
+                                <li>
+                                    <span class="tl-dot"></span>
+                                    <div><strong>In Production — Joinery</strong><span>Pending</span></div>
+                                </li>
+                                <li>
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Finishing &amp; Quality Check</strong><span>Pending</span></div>
+                                </li>
+                                <li>
+                                    <span class="tl-dot"></span>
+                                    <div><strong>Shipped</strong><span>Pending</span></div>
+                                </li>
+                            </ol>
+
+                            <div class="order-detail-footer">
+                                <span>Estimated delivery: Oct 1 – Oct 8, 2026</span>
+                                <button type="button" class="btn btn-outline">Contact Support</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="shop-empty" id="ordersEmpty" hidden>
+                    No orders match this filter yet.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================
+        FOOTER
+    =========================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>NestaGo</h2>
+                    <p>Premium handcrafted furniture built with precision, sustainability, and timeless design.</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="index.html#collection">Collection</a></li>
+                            <li><a href="index.html#process">Process</a></li>
+                            <li><a href="index.html#materials">Materials</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Follow</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 NestaGo. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Pinterest">PT</a>
+                    <a href="#" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="app.js"></script>
+</body>
+</html>

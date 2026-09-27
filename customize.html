@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customize — NestaGo | Build Your Own Piece</title>
+
+    <meta name="description"
+          content="Design your own NestaGo piece — choose the form, wood, finish and dimensions, and see a live blueprint preview before you order.">
+    <meta name="keywords" content="Furniture, Custom Furniture, Wood Furniture, Configurator">
+    <meta name="author" content="NestaGo">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1C1B17">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Customize — NestaGo">
+    <meta property="og:description" content="Design your own handcrafted NestaGo piece.">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- ==========================================================
+        HEADER
+    =========================================================== -->
+    <header class="site-header">
+
+        <nav class="nav" aria-label="Primary Navigation">
+
+            <a href="index.html#top" class="nav-logo">
+                NestaGo
+                <span>EST. 2026</span>
+            </a>
+
+            <ul class="nav-links" id="mobile-menu">
+
+                <li><a href="index.html#collection">Collection</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#materials">Materials</a></li>
+
+                <li class="dropdown">
+                    <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+                        More
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="customize.html" aria-current="page">Customize</a></li>
+                        <li><a href="orders.html">Orders</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="index.html#visit">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-actions">
+                <a href="shop.html" class="nav-btn">Shop Now</a>
+
+                <button class="nav-toggle" type="button" aria-label="Toggle Navigation"
+                        aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main id="main-content">
+
+        <!-- ==========================================================
+            PAGE HERO
+        =========================================================== -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-inner reveal">
+                    <span class="section-tag">Build Your Own</span>
+                    <h1>
+                        Draft it.
+                        <span>We'll build it.</span>
+                    </h1>
+                    <p>
+                        Choose a form, a wood, a finish and a size — the blueprint and
+                        price update as you go. Every configuration is handmade to order.
+                    </p>
+                </div>
+                <div class="breadcrumb reveal">
+                    <a href="index.html#top">Home</a>
+                    <span>/</span>
+                    <span>Customize</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+            CUSTOMIZER
+        =========================================================== -->
+        <section class="customize-section">
+            <div class="container customize-layout">
+
+                <!-- ============================
+                    OPTIONS PANEL
+                ============================= -->
+                <form class="customize-panel reveal" id="customizeForm">
+
+                    <!-- FORM -->
+                    <fieldset class="option-group">
+                        <legend>01 — Form</legend>
+                        <div class="option-tiles" data-role="form">
+                            <label class="option-tile is-selected">
+                                <input type="radio" name="form" value="chair" checked>
+                                <span class="tile-label">Chair</span>
+                                <span class="tile-sub">from $420</span>
+                            </label>
+                            <label class="option-tile">
+                                <input type="radio" name="form" value="table">
+                                <span class="tile-label">Table</span>
+                                <span class="tile-sub">from $1,180</span>
+                            </label>
+                            <label class="option-tile">
+                                <input type="radio" name="form" value="bench">
+                                <span class="tile-label">Bench</span>
+                                <span class="tile-sub">from $560</span>
+                            </label>
+                            <label class="option-tile">
+                                <input type="radio" name="form" value="shelf">
+                                <span class="tile-label">Shelf</span>
+                                <span class="tile-sub">from $680</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- WOOD -->
+                    <fieldset class="option-group">
+                        <legend>02 — Wood</legend>
+                        <div class="option-swatches" data-role="wood">
+                            <label class="swatch-tile is-selected">
+                                <input type="radio" name="wood" value="oak" checked>
+                                <span class="swatch-color" style="background:#BE9B67;"></span>
+                                <span class="tile-label">White Oak</span>
+                            </label>
+                            <label class="swatch-tile">
+                                <input type="radio" name="wood" value="walnut">
+                                <span class="swatch-color" style="background:#5A3E2C;"></span>
+                                <span class="tile-label">Walnut</span>
+                            </label>
+                            <label class="swatch-tile">
+                                <input type="radio" name="wood" value="ash">
+                                <span class="swatch-color" style="background:#D7CCB2;"></span>
+                                <span class="tile-label">Ash</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- FINISH -->
+                    <fieldset class="option-group">
+                        <legend>03 — Finish</legend>
+                        <div class="option-tiles" data-role="finish">
+                            <label class="option-tile is-selected">
+                                <input type="radio" name="finish" value="natural" checked>
+                                <span class="tile-label">Natural Oil</span>
+                                <span class="tile-sub">+$0</span>
+                            </label>
+                            <label class="option-tile">
+                                <input type="radio" name="finish" value="matte">
+                                <span class="tile-label">Matte Wax</span>
+                                <span class="tile-sub">+$45</span>
+                            </label>
+                            <label class="option-tile">
+                                <input type="radio" name="finish" value="dark">
+                                <span class="tile-label">Dark Stain</span>
+                                <span class="tile-sub">+$60</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- HARDWARE -->
+                    <fieldset class="option-group">
+                        <legend>04 — Hardware</legend>
+                        <div class="option-tiles" data-role="hardware">
+                            <label class="option-tile is-selected">
+                                <input type="radio" name="hardware" value="blackened" checked>
+                                <span class="tile-label">Blackened Steel</span>
+                                <span class="tile-sub">+$0</span>
+                            </label>
+                            <label class="option-tile">
+                                <input type="radio" name="hardware" value="brass">
+                                <span class="tile-label">Solid Brass</span>
+                                <span class="tile-sub">+$85</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- DIMENSIONS -->
+                    <fieldset class="option-group">
+                        <legend>05 — Dimensions</legend>
+
+                        <div class="range-field">
+                            <div class="range-label">
+                                <span>Width</span>
+                                <span id="widthValue">560 mm</span>
+                            </div>
+                            <input type="range" id="widthRange" min="400" max="1800" step="10" value="560">
+                        </div>
+
+                        <div class="range-field">
+                            <div class="range-label">
+                                <span>Height</span>
+                                <span id="heightValue">920 mm</span>
+                            </div>
+                            <input type="range" id="heightRange" min="400" max="1200" step="10" value="920">
+                        </div>
+                    </fieldset>
+
+                    <!-- ENGRAVING -->
+                    <fieldset class="option-group">
+                        <legend>06 — Engraving (optional)</legend>
+                        <input type="text" id="engraveInput" class="text-field"
+                               placeholder="e.g. a name, date or short note" maxlength="28">
+                        <p class="field-hint"><span id="engraveCount">0</span>/28 characters</p>
+                    </fieldset>
+
+                </form>
+
+                <!-- ============================
+                    PREVIEW / SUMMARY
+                ============================= -->
+                <aside class="customize-preview reveal">
+
+                    <div class="preview-card">
+                        <svg id="previewSvg" viewBox="0 0 420 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path class="draw-path" d="M110 200L110 390" stroke="currentColor" stroke-width="2"/>
+                            <path class="draw-path" d="M310 200L310 390" stroke="currentColor" stroke-width="2"/>
+                            <path class="draw-path" d="M110 340L310 340" stroke="currentColor" stroke-width="2"/>
+                            <path class="draw-path" d="M95 185H325V200H95Z" stroke="currentColor" stroke-width="2"/>
+                            <path class="draw-path" d="M120 185V70" stroke="currentColor" stroke-width="2"/>
+                            <path class="draw-path" d="M300 185V70" stroke="currentColor" stroke-width="2"/>
+                            <path class="draw-path" d="M120 70H300" stroke="currentColor" stroke-width="2"/>
+                            <path class="draw-path" d="M120 100H300" stroke="currentColor" stroke-width="1.4"/>
+                            <path class="draw-path" d="M120 130H300" stroke="currentColor" stroke-width="1.4"/>
+                            <path class="draw-path" d="M120 160H300" stroke="currentColor" stroke-width="1.4"/>
+
+                            <line x1="60" y1="70" x2="60" y2="390" class="dim-line"/>
+                            <line x1="100" y1="420" x2="320" y2="420" class="dim-line"/>
+
+                            <text x="210" y="445" class="dim" text-anchor="middle" id="previewWidthLabel">W 560mm</text>
+                            <text x="32" y="230" class="dim" transform="rotate(-90 32 230)" id="previewHeightLabel">H 920mm</text>
+                            <text x="210" y="35" class="dim" text-anchor="middle" id="previewFigLabel">FIG. CHAIR-01</text>
+                        </svg>
+                    </div>
+
+                    <div class="summary-list">
+                        <div class="summary-row">
+                            <span>Form</span>
+                            <strong id="summaryForm">Chair</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>Wood</span>
+                            <strong id="summaryWood">White Oak</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>Finish</span>
+                            <strong id="summaryFinish">Natural Oil</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>Hardware</span>
+                            <strong id="summaryHardware">Blackened Steel</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>Size</span>
+                            <strong id="summarySize">560 × 920 mm</strong>
+                        </div>
+                        <div class="summary-row" id="summaryEngraveRow" hidden>
+                            <span>Engraving</span>
+                            <strong id="summaryEngrave">—</strong>
+                        </div>
+                    </div>
+
+                    <div class="summary-total">
+                        <span>Estimated Price</span>
+                        <strong id="summaryPrice">$420</strong>
+                    </div>
+
+                    <button type="button" class="btn btn-primary customize-cta" id="addCustomBtn">
+                        Add Custom Piece to Cart
+                    </button>
+                    <p class="field-hint">Handmade to order — allow 6–8 weeks for delivery.</p>
+
+                </aside>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================
+        FOOTER
+    =========================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>NestaGo</h2>
+                    <p>Premium handcrafted furniture built with precision, sustainability, and timeless design.</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="index.html#collection">Collection</a></li>
+                            <li><a href="index.html#process">Process</a></li>
+                            <li><a href="index.html#materials">Materials</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Follow</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 NestaGo. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Pinterest">PT</a>
+                    <a href="#" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop — NestaGo | Premium Handcrafted Furniture</title>
+
+    <meta name="description"
+          content="Browse the full NestaGo catalog — handcrafted chairs, tables, benches and lighting in solid oak, walnut and ash.">
+    <meta name="keywords" content="Furniture, Wood Furniture, Shop, Modern Furniture, Premium Furniture">
+    <meta name="author" content="NestaGo">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1C1B17">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shop — NestaGo">
+    <meta property="og:description" content="Browse the full NestaGo catalog of handcrafted furniture.">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="account-cart.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- ==========================================================
+        HEADER
+    =========================================================== -->
+    <header class="site-header">
+
+        <nav class="nav" aria-label="Primary Navigation">
+
+            <a href="index.html#top" class="nav-logo">
+                NestaGo
+                <span>EST. 2026</span>
+            </a>
+
+            <ul class="nav-links" id="mobile-menu">
+
+                <li><a href="index.html#collection">Collection</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#materials">Materials</a></li>
+
+                <li class="dropdown">
+                    <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+                        More
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="shop.html" aria-current="page">Shop</a></li>
+                        <li><a href="customize.html">Customize</a></li>
+                        <li><a href="orders.html">Orders</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="index.html#visit">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-actions">
+                <a href="shop.html" class="nav-btn">Shop Now</a>
+                <a href="cart.html" class="nav-account-link">Cart <span class="cart-count">0</span></a>
+                <a href="login.html" class="nav-account-link">Sign In</a>
+
+                <button class="nav-toggle" type="button" aria-label="Toggle Navigation"
+                        aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main id="main-content">
+
+        <!-- ==========================================================
+            PAGE HERO
+        =========================================================== -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-inner reveal">
+                    <span class="section-tag">Full Catalog</span>
+                    <h1>
+                        Every piece,
+                        <span>one workshop.</span>
+                    </h1>
+                    <p>
+                        Browse the complete NestaGo range — filter by category, material
+                        or price to find the piece that fits your room.
+                    </p>
+                </div>
+                <div class="breadcrumb reveal">
+                    <a href="index.html#top">Home</a>
+                    <span>/</span>
+                    <span>Shop</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+            SHOP
+        =========================================================== -->
+        <section class="shop-section">
+            <div class="container shop-layout">
+
+                <!-- ============================
+                    FILTER SIDEBAR
+                ============================= -->
+                <aside class="shop-filters reveal" aria-label="Filter products">
+
+                    <div class="filter-group">
+                        <h3>Category</h3>
+                        <label class="filter-check">
+                            <input type="checkbox" name="category" value="chairs" checked>
+                            <span>Chairs</span>
+                            <em>3</em>
+                        </label>
+                        <label class="filter-check">
+                            <input type="checkbox" name="category" value="tables" checked>
+                            <span>Tables</span>
+                            <em>2</em>
+                        </label>
+                        <label class="filter-check">
+                            <input type="checkbox" name="category" value="storage" checked>
+                            <span>Storage</span>
+                            <em>2</em>
+                        </label>
+                        <label class="filter-check">
+                            <input type="checkbox" name="category" value="lighting" checked>
+                            <span>Lighting</span>
+                            <em>1</em>
+                        </label>
+                        <label class="filter-check">
+                            <input type="checkbox" name="category" value="seating" checked>
+                            <span>Benches &amp; Seating</span>
+                            <em>1</em>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Material</h3>
+                        <label class="filter-check">
+                            <input type="checkbox" name="material" value="oak" checked>
+                            <span>White Oak</span>
+                        </label>
+                        <label class="filter-check">
+                            <input type="checkbox" name="material" value="walnut" checked>
+                            <span>Walnut</span>
+                        </label>
+                        <label class="filter-check">
+                            <input type="checkbox" name="material" value="ash" checked>
+                            <span>Ash Wood</span>
+                        </label>
+                        <label class="filter-check">
+                            <input type="checkbox" name="material" value="brass" checked>
+                            <span>Brass Hardware</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Price</h3>
+                        <input type="range" class="filter-range" id="priceRange"
+                               min="150" max="2700" step="10" value="2700">
+                        <div class="filter-range-value">
+                            Up to <span id="priceRangeValue">$2,700</span>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-outline filter-reset" id="filterReset">
+                        Reset Filters
+                    </button>
+
+                </aside>
+
+                <!-- ============================
+                    PRODUCT GRID
+                ============================= -->
+                <div class="shop-results">
+
+                    <div class="shop-toolbar reveal">
+                        <p><strong id="resultCount">27</strong> pieces</p>
+
+                        <label class="sort-control">
+                            Sort by
+                            <select id="sortSelect">
+                                <option value="featured">Featured</option>
+                                <option value="price-asc">Price: Low to High</option>
+                                <option value="price-desc">Price: High to Low</option>
+                                <option value="rating">Highest Rated</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="product-grid" id="shopGrid">
+
+                        <!-- 01 -->
+                        <article class="product-card reveal" data-category="seating" data-material="ash"
+                                  data-price="340" data-rating="4.9">
+                            <span class="product-badge">New</span>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M28 44H92V54H28Z"/>
+                                    <path class="draw-path" d="M34 54L26 100"/>
+                                    <path class="draw-path" d="M86 54L94 100"/>
+                                    <path class="draw-path" d="M60 54V100"/>
+                                    <path class="draw-path" d="M30 78H90"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★★ <span>(4.9)</span></div>
+                                <h3>Drafting Stool</h3>
+                                <p>Solid Ash Wood</p>
+                                <div class="price-row">
+                                    <span class="price">$340</span>
+                                    <span class="stock">In Stock</span>
+                                </div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Quick View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 02 -->
+                        <article class="product-card reveal" data-category="tables" data-material="oak"
+                                  data-price="2180" data-rating="5.0">
+                            <span class="product-badge sale">Sale</span>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M14 42H106V50H14Z"/>
+                                    <path class="draw-path" d="M22 50V96"/>
+                                    <path class="draw-path" d="M98 50V96"/>
+                                    <path class="draw-path" d="M22 72H98"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★★ <span>(5.0)</span></div>
+                                <h3>Long Table</h3>
+                                <p>American Oak</p>
+                                <div class="price-row">
+                                    <span class="old-price">$2,450</span>
+                                    <span class="price">$2,180</span>
+                                </div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Details</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 03 -->
+                        <article class="product-card reveal" data-category="chairs" data-material="walnut"
+                                  data-price="890" data-rating="4.8">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M32 58H88V66H32Z"/>
+                                    <path class="draw-path" d="M36 66L30 102"/>
+                                    <path class="draw-path" d="M84 66L90 102"/>
+                                    <path class="draw-path" d="M38 58V20"/>
+                                    <path class="draw-path" d="M82 58V20"/>
+                                    <path class="draw-path" d="M38 20H82"/>
+                                    <path class="draw-path" d="M38 36H82"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.8)</span></div>
+                                <h3>Reading Chair</h3>
+                                <p>Walnut Frame</p>
+                                <div class="price-row"><span class="price">$890</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 04 -->
+                        <article class="product-card reveal" data-category="storage" data-material="ash"
+                                  data-price="760" data-rating="4.9">
+                            <span class="product-badge">Bestseller</span>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M18 26H102V94H18Z"/>
+                                    <path class="draw-path" d="M18 52H102"/>
+                                    <path class="draw-path" d="M18 72H102"/>
+                                    <path class="draw-path" d="M60 26V94"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★★ <span>(4.9)</span></div>
+                                <h3>Low Shelf</h3>
+                                <p>Ash + Black Steel</p>
+                                <div class="price-row"><span class="price">$760</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Quick View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 05 -->
+                        <article class="product-card reveal" data-category="seating" data-material="oak"
+                                  data-price="610" data-rating="5.0">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M14 50H106V58H14Z"/>
+                                    <path class="draw-path" d="M22 58V94"/>
+                                    <path class="draw-path" d="M98 58V94"/>
+                                    <path class="draw-path" d="M22 80H98"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★★ <span>(5.0)</span></div>
+                                <h3>Wooden Bench</h3>
+                                <p>White Oak</p>
+                                <div class="price-row"><span class="price">$610</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Details</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 06 -->
+                        <article class="product-card reveal" data-category="lighting" data-material="brass"
+                                  data-price="210" data-rating="4.7">
+                            <span class="product-badge new">Limited</span>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M60 20L38 50H82Z"/>
+                                    <path class="draw-path" d="M60 50V92"/>
+                                    <path class="draw-path" d="M40 100H80"/>
+                                    <path class="draw-path" d="M60 92L40 100"/>
+                                    <path class="draw-path" d="M60 92L80 100"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.7)</span></div>
+                                <h3>Task Lamp</h3>
+                                <p>Brass &amp; Walnut</p>
+                                <div class="price-row"><span class="price">$210</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 07 -->
+                        <article class="product-card reveal" data-category="chairs" data-material="oak"
+                                  data-price="480" data-rating="4.6">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M30 50H90V58H30Z"/>
+                                    <path class="draw-path" d="M34 58L28 100"/>
+                                    <path class="draw-path" d="M86 58L92 100"/>
+                                    <path class="draw-path" d="M36 50V26H84V50"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.6)</span></div>
+                                <h3>Counter Stool</h3>
+                                <p>White Oak</p>
+                                <div class="price-row"><span class="price">$480</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 08 -->
+                        <article class="product-card reveal" data-category="tables" data-material="walnut"
+                                  data-price="1340" data-rating="4.9">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M20 46H100V54H20Z"/>
+                                    <path class="draw-path" d="M28 54V96"/>
+                                    <path class="draw-path" d="M92 54V96"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★★ <span>(4.9)</span></div>
+                                <h3>Round Side Table</h3>
+                                <p>Walnut</p>
+                                <div class="price-row"><span class="price">$1,340</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 09 -->
+                        <article class="product-card reveal" data-category="storage" data-material="walnut"
+                                  data-price="1620" data-rating="4.8">
+                            <span class="product-badge">New</span>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M22 20H98V100H22Z"/>
+                                    <path class="draw-path" d="M22 60H98"/>
+                                    <path class="draw-path" d="M60 20V60"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.8)</span></div>
+                                <h3>Tall Cabinet</h3>
+                                <p>Walnut + Brass Pulls</p>
+                                <div class="price-row"><span class="price">$1,620</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 10 -->
+                        <article class="product-card reveal" data-category="chairs" data-material="oak"
+                                  data-price="520" data-rating="4.7">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M32 58H88V66H32Z"/>
+                                    <path class="draw-path" d="M36 66L30 102"/>
+                                    <path class="draw-path" d="M84 66L90 102"/>
+                                    <path class="draw-path" d="M38 58V20"/>
+                                    <path class="draw-path" d="M82 58V20"/>
+                                    <path class="draw-path" d="M38 20H82"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.7)</span></div>
+                                <h3>Windsor Chair</h3>
+                                <p>White Oak</p>
+                                <div class="price-row"><span class="price">$520</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 11 -->
+                        <article class="product-card reveal" data-category="tables" data-material="walnut"
+                                  data-price="980" data-rating="4.6">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M14 42H106V50H14Z"/>
+                                    <path class="draw-path" d="M22 50V96"/>
+                                    <path class="draw-path" d="M98 50V96"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.6)</span></div>
+                                <h3>Console Table</h3>
+                                <p>Walnut</p>
+                                <div class="price-row"><span class="price">$980</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Details</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 12 -->
+                        <article class="product-card reveal" data-category="storage" data-material="oak"
+                                  data-price="890" data-rating="4.9">
+                            <span class="product-badge">New</span>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M18 26H102V94H18Z"/>
+                                    <path class="draw-path" d="M18 52H102"/>
+                                    <path class="draw-path" d="M18 72H102"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★★ <span>(4.9)</span></div>
+                                <h3>Bookshelf</h3>
+                                <p>White Oak</p>
+                                <div class="price-row"><span class="price">$890</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Quick View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 13 -->
+                        <article class="product-card reveal" data-category="lighting" data-material="brass"
+                                  data-price="340" data-rating="4.8">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M60 20L38 50H82Z"/>
+                                    <path class="draw-path" d="M60 50V92"/>
+                                    <path class="draw-path" d="M40 100H80"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.8)</span></div>
+                                <h3>Floor Lamp</h3>
+                                <p>Solid Brass</p>
+                                <div class="price-row"><span class="price">$340</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 14 -->
+                        <article class="product-card reveal" data-category="seating" data-material="ash"
+                                  data-price="720" data-rating="4.5">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M14 50H106V58H14Z"/>
+                                    <path class="draw-path" d="M22 58V94"/>
+                                    <path class="draw-path" d="M98 58V94"/>
+                                    <path class="draw-path" d="M22 80H98"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.5)</span></div>
+                                <h3>Bench Set</h3>
+                                <p>Ash Wood</p>
+                                <div class="price-row"><span class="price">$720</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Details</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 15 -->
+                        <article class="product-card reveal" data-category="chairs" data-material="walnut"
+                                  data-price="1080" data-rating="4.9">
+                            <span class="product-badge">Bestseller</span>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M32 58H88V66H32Z"/>
+                                    <path class="draw-path" d="M36 66L30 102"/>
+                                    <path class="draw-path" d="M84 66L90 102"/>
+                                    <path class="draw-path" d="M38 58V20"/>
+                                    <path class="draw-path" d="M82 58V20"/>
+                                    <path class="draw-path" d="M38 20H82"/>
+                                    <path class="draw-path" d="M38 36H82"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★★ <span>(4.9)</span></div>
+                                <h3>Lounge Chair</h3>
+                                <p>Walnut Frame</p>
+                                <div class="price-row"><span class="price">$1,080</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 16 -->
+                        <article class="product-card reveal" data-category="tables" data-material="oak"
+                                  data-price="2650" data-rating="5.0">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M14 42H106V50H14Z"/>
+                                    <path class="draw-path" d="M22 50V96"/>
+                                    <path class="draw-path" d="M98 50V96"/>
+                                    <path class="draw-path" d="M22 72H98"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★★ <span>(5.0)</span></div>
+                                <h3>Dining Table</h3>
+                                <p>American Oak</p>
+                                <div class="price-row"><span class="price">$2,650</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Details</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 17 -->
+                        <article class="product-card reveal" data-category="storage" data-material="ash"
+                                  data-price="1290" data-rating="4.7">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M18 26H102V94H18Z"/>
+                                    <path class="draw-path" d="M18 52H102"/>
+                                    <path class="draw-path" d="M60 26V94"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.7)</span></div>
+                                <h3>Sideboard</h3>
+                                <p>Ash Wood</p>
+                                <div class="price-row"><span class="price">$1,290</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Quick View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 18 -->
+                        <article class="product-card reveal" data-category="lighting" data-material="oak"
+                                  data-price="260" data-rating="4.6">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M60 20L38 50H82Z"/>
+                                    <path class="draw-path" d="M60 50V92"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.6)</span></div>
+                                <h3>Pendant Light</h3>
+                                <p>White Oak Canopy</p>
+                                <div class="price-row"><span class="price">$260</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 19 -->
+                        <article class="product-card reveal" data-category="seating" data-material="walnut"
+                                  data-price="480" data-rating="4.8">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M22 60H98V90H22Z"/>
+                                    <path class="draw-path" d="M22 60L34 44H86L98 60"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.8)</span></div>
+                                <h3>Ottoman</h3>
+                                <p>Walnut Base</p>
+                                <div class="price-row"><span class="price">$480</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Details</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 20 -->
+                        <article class="product-card reveal" data-category="chairs" data-material="ash"
+                                  data-price="310" data-rating="4.5">
+                            <span class="product-badge sale">Sale</span>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M30 50H90V58H30Z"/>
+                                    <path class="draw-path" d="M34 58L28 100"/>
+                                    <path class="draw-path" d="M86 58L92 100"/>
+                                    <path class="draw-path" d="M36 50V26H84V50"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.5)</span></div>
+                                <h3>Kitchen Chair</h3>
+                                <p>Ash Wood</p>
+                                <div class="price-row">
+                                    <span class="old-price">$360</span>
+                                    <span class="price">$310</span>
+                                </div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 21 -->
+                        <article class="product-card reveal" data-category="tables" data-material="brass"
+                                  data-price="640" data-rating="4.7">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M20 46H100V54H20Z"/>
+                                    <path class="draw-path" d="M28 54V96"/>
+                                    <path class="draw-path" d="M92 54V96"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.7)</span></div>
+                                <h3>Brass Side Table</h3>
+                                <p>Oak Top, Brass Legs</p>
+                                <div class="price-row"><span class="price">$640</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 22 -->
+                        <article class="product-card reveal" data-category="storage" data-material="walnut"
+                                  data-price="1480" data-rating="4.8">
+                            <span class="product-badge">New</span>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M18 26H102V94H18Z"/>
+                                    <path class="draw-path" d="M18 60H102"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.8)</span></div>
+                                <h3>Media Console</h3>
+                                <p>Walnut</p>
+                                <div class="price-row"><span class="price">$1,480</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Quick View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 23 -->
+                        <article class="product-card reveal" data-category="lighting" data-material="walnut"
+                                  data-price="195" data-rating="4.4">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M60 30L44 54H76Z"/>
+                                    <path class="draw-path" d="M60 54V92"/>
+                                    <path class="draw-path" d="M46 100H74"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.4)</span></div>
+                                <h3>Table Lamp</h3>
+                                <p>Walnut Base</p>
+                                <div class="price-row"><span class="price">$195</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 24 -->
+                        <article class="product-card reveal" data-category="seating" data-material="oak"
+                                  data-price="1620" data-rating="4.9">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M14 56H106V64H14Z"/>
+                                    <path class="draw-path" d="M20 64V92"/>
+                                    <path class="draw-path" d="M100 64V92"/>
+                                    <path class="draw-path" d="M14 56L24 40H96L106 56"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★★ <span>(4.9)</span></div>
+                                <h3>Daybed</h3>
+                                <p>White Oak</p>
+                                <div class="price-row"><span class="price">$1,620</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Details</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 25 -->
+                        <article class="product-card reveal" data-category="chairs" data-material="brass"
+                                  data-price="380" data-rating="4.6">
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M28 44H92V54H28Z"/>
+                                    <path class="draw-path" d="M34 54L26 100"/>
+                                    <path class="draw-path" d="M86 54L94 100"/>
+                                    <path class="draw-path" d="M30 78H90"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.6)</span></div>
+                                <h3>Bar Stool</h3>
+                                <p>Oak, Brass Footrest</p>
+                                <div class="price-row"><span class="price">$380</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 26 -->
+                        <article class="product-card reveal" data-category="tables" data-material="ash"
+                                  data-price="540" data-rating="4.7">
+                            <span class="product-badge sale">Sale</span>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M20 50H60V58H20Z"/>
+                                    <path class="draw-path" d="M28 58V94"/>
+                                    <path class="draw-path" d="M52 58V94"/>
+                                    <path class="draw-path" d="M40 42H80V50H40Z"/>
+                                    <path class="draw-path" d="M48 50V86"/>
+                                    <path class="draw-path" d="M72 50V86"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★☆ <span>(4.7)</span></div>
+                                <h3>Nesting Tables</h3>
+                                <p>Ash Wood, Set of 2</p>
+                                <div class="price-row">
+                                    <span class="old-price">$610</span>
+                                    <span class="price">$540</span>
+                                </div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Details</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 27 -->
+                        <article class="product-card reveal" data-category="storage" data-material="brass"
+                                  data-price="1750" data-rating="4.9">
+                            <span class="product-badge new">Limited</span>
+                            <button class="wishlist-btn" aria-label="Add to Wishlist">♥</button>
+                            <div class="product-image">
+                                <svg viewBox="0 0 120 120">
+                                    <path class="draw-path" d="M18 26H102V94H18Z"/>
+                                    <path class="draw-path" d="M18 52H102"/>
+                                    <path class="draw-path" d="M60 52V94"/>
+                                </svg>
+                            </div>
+                            <div class="product-content">
+                                <div class="rating">★★★★★ <span>(4.9)</span></div>
+                                <h3>Drinks Cabinet</h3>
+                                <p>Oak, Brass Hardware</p>
+                                <div class="price-row"><span class="price">$1,750</span></div>
+                                <div class="product-buttons">
+                                    <button class="btn-primary">Add to Cart</button>
+                                    <button class="btn-outline">Quick View</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <p class="shop-empty" id="shopEmpty" hidden>
+                        No pieces match those filters — try widening your price range or
+                        selecting another material.
+                    </p>
+
+                    <nav class="pagination reveal" aria-label="Product pages" id="pagination"></nav>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================================
+            NEWSLETTER (shared)
+        =========================================================== -->
+        <section class="newsletter" id="visit">
+            <div class="container">
+                <div class="newsletter-wrapper reveal">
+                    <div class="newsletter-content">
+                        <span class="section-tag">Stay Connected</span>
+                        <h2>Join Our <span>Furniture Journal</span></h2>
+                        <p>Receive product launches, exclusive collections, woodworking stories,
+                           interior inspiration, and member-only offers.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================
+        FOOTER
+    =========================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>NestaGo</h2>
+                    <p>Premium handcrafted furniture built with precision, sustainability, and timeless design.</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="index.html#collection">Collection</a></li>
+                            <li><a href="index.html#process">Process</a></li>
+                            <li><a href="index.html#materials">Materials</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Follow</h4>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 NestaGo. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Pinterest">PT</a>
+                    <a href="#" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

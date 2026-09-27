@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Register | WoodCraft Furniture</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="responsive.css">
+        
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-couch"></i>
+
+                WoodCraft
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-icons">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+
+            <div class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Register -->
+
+    <section class="auth-section">
+
+        <div class="auth-container">
+
+            <!-- Left -->
+
+            <div class="auth-image">
+
+                <img
+                    src="images/register.jpg"
+                    alt="Register">
+
+                <div class="auth-overlay">
+
+                    <h2>
+
+                        Join WoodCraft
+
+                    </h2>
+
+                    <p>
+
+                        Create an account and enjoy
+                        faster checkout, order tracking,
+                        wishlist, and exclusive offers.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="auth-form">
+
+                <span class="section-tag">
+
+                    Create Account
+
+                </span>
+
+                <h1>
+
+                    Register
+
+                </h1>
+
+                <p>
+
+                    Fill in your details below.
+
+                </p>
+
+                <form id="registerForm">
+
+                    <div class="form-row">
+
+                        <input
+                            type="text"
+                            placeholder="First Name"
+                            required>
+
+                        <input
+                            type="text"
+                            placeholder="Last Name"
+                            required>
+
+                    </div>
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        required>
+
+                    <input
+                        type="tel"
+                        placeholder="Phone Number"
+                        required>
+
+                    <div class="input-box password-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            id="password"
+                            type="password"
+                            placeholder="Password"
+                            required>
+
+                        <button
+                            class="toggle-password"
+                            type="button">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                    <div class="strength">
+
+                        <div id="strengthBar"></div>
+
+                    </div>
+
+                    <div class="input-box password-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            id="confirmPassword"
+                            type="password"
+                            placeholder="Confirm Password"
+                            required>
+
+                        <button
+                            class="toggle-password"
+                            type="button">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                    <label class="remember-box">
+
+                        <input
+                            type="checkbox"
+                            required>
+
+                        I agree to the Terms &
+                        Privacy Policy
+
+                    </label>
+
+                    <button
+                        class="primary-btn"
+                        type="submit">
+
+                        Create Account
+
+                    </button>
+
+                </form>
+
+                <p class="auth-switch">
+
+                    Already have an account?
+
+                    <a href="login.html">
+
+                        Login
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+
+</html>

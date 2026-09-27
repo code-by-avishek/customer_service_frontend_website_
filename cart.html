@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1C1B17">
+    <title>Your Cart — NestaGo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="account-cart.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary Navigation">
+            <a href="index.html#top" class="nav-logo">NestaGo <span>EST. 2026</span></a>
+            <ul class="nav-links" id="mobile-menu">
+                <li><a href="index.html#collection">Collection</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html#materials">Materials</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cart.html" class="nav-account-link" aria-current="page">Cart <span class="cart-count">0</span></a>
+                <a href="login.html" class="nav-btn nav-account-link">Sign In</a>
+                <button class="nav-toggle" type="button" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero cart-hero">
+            <div class="container">
+                <div class="page-hero-inner">
+                    <span class="section-tag">Your selection</span>
+                    <h1>Shopping <span>cart.</span></h1>
+                    <p>Thoughtfully made pieces, gathered in one place.</p>
+                </div>
+                <div class="breadcrumb">
+                    <a href="index.html#top">Home</a><span>/</span><span>Cart</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-section container" aria-label="Shopping cart">
+            <div class="cart-layout" id="cartContent">
+                <div class="cart-items-panel">
+                    <div class="cart-items-heading">
+                        <h2>Your items</h2>
+                        <span id="cartItemCount">0 items</span>
+                    </div>
+                    <div id="cartItems" class="cart-items"></div>
+                </div>
+                <aside class="cart-summary" aria-labelledby="summaryTitle">
+                    <span class="section-tag">The details</span>
+                    <h2 id="summaryTitle">Order summary</h2>
+                    <div class="cart-summary-row">
+                        <span>Subtotal</span><strong id="cartSubtotal">$0</strong>
+                    </div>
+                    <div class="cart-summary-row">
+                        <span>Shipping</span><strong class="cart-free">Complimentary</strong>
+                    </div>
+                    <p class="cart-shipping-note">Complimentary delivery on every order.</p>
+                    <div class="cart-summary-row cart-total">
+                        <span>Total</span><strong id="cartTotal">$0</strong>
+                    </div>
+                    <button class="btn btn-primary cart-checkout" id="checkoutButton" type="button">Continue to checkout</button>
+                    <p class="checkout-message" id="checkoutMessage" role="status" aria-live="polite"></p>
+                    <a class="cart-continue" href="shop.html">← Continue shopping</a>
+                    <p class="cart-demo-note">Checkout is a preview and does not process payments.</p>
+                </aside>
+            </div>
+            <div class="cart-empty" id="cartEmpty" hidden>
+                <div class="cart-empty-icon" aria-hidden="true">＋</div>
+                <span class="section-tag">Nothing here yet</span>
+                <h2>Your cart is waiting.</h2>
+                <p>Explore the collection and find a piece made for your space.</p>
+                <a href="shop.html" class="btn btn-primary">Explore the collection</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="account-footer">
+        <p>© 2026 NestaGo · Made with care, built to last.</p>
+        <a href="login.html">Your account</a>
+    </footer>
+
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

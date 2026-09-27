@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1C1B17">
+    <title>Sign In — NestaGo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="account-cart.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary Navigation">
+            <a href="index.html#top" class="nav-logo">NestaGo <span>EST. 2026</span></a>
+            <ul class="nav-links" id="mobile-menu">
+                <li><a href="index.html#collection">Collection</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html#materials">Materials</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cart.html" class="nav-account-link">Cart <span class="cart-count">0</span></a>
+                <a href="login.html" class="nav-btn nav-account-link" aria-current="page">Sign In</a>
+                <button class="nav-toggle" type="button" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" class="account-page">
+        <section class="account-card" aria-labelledby="login-title">
+            <div class="account-art">
+                <span class="section-tag">Welcome back</span>
+                <h1>Good design<br><em>feels like home.</em></h1>
+                <p>Sign in to pick up where you left off and keep your favourite pieces close.</p>
+                <div class="account-art-mark" aria-hidden="true">
+                    <svg viewBox="0 0 240 190" fill="none">
+                        <path d="M47 69h146v20H47zM61 89l-13 77m144-77 13 77M77 89v77m86-77v77M48 128h144" />
+                        <path d="M35 168h170M31 178h178" />
+                    </svg>
+                    <span>CRAFTED TO LAST</span>
+                </div>
+            </div>
+            <div class="account-form-panel">
+                <span class="section-tag">Your NestaGo account</span>
+                <h2 id="login-title">Sign in</h2>
+                <p class="account-intro">Enter your details to continue.</p>
+                <form id="loginForm">
+                    <label class="account-label" for="loginEmail">Email address</label>
+                    <input class="account-input" id="loginEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
+                    <label class="account-label" for="loginPassword">Password</label>
+                    <div class="password-field">
+                        <input class="account-input" id="loginPassword" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+                        <button class="password-toggle" type="button" aria-label="Show password" aria-pressed="false">Show</button>
+                    </div>
+
+                    <div class="account-options">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                        <span>Demo account</span>
+                    </div>
+                    <button class="btn btn-primary account-submit" type="submit">Sign In</button>
+                    <p class="account-notice" id="loginMessage" role="status" aria-live="polite">
+                        Demo sign-in only. Account authentication is not connected.
+                    </p>
+                </form>
+                <a class="account-back-link" href="shop.html">Continue shopping <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+    </main>
+
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
+    <script src="account.js"></script>
+</body>
+</html>
